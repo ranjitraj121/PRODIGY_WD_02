@@ -1,0 +1,74 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('stopwatch.jpg'); /* Change this URL to your desired background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.stopwatch-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 300px;
+}
+
+.watch-face {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.watch-face h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.control-btn {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.control-btn:hover {
+    background: #555;
+}
+
+.laps-list {
+    list-style: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    border-top: 1px solid #ccc;
+    margin: 0;
+}
+
+.laps-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+}
